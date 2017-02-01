@@ -28,48 +28,48 @@ MuseScore {
                         // you may need to decrease the text.pos.y values for
                         // case 0 an 2 (voice 1 and 3) further down (twice)
          if ( i > 0 )
-            text.text = sep + text.text; // any but top note
+            return
 
          if (typeof notes[i].tpc === "undefined") // like for grace notes ?!?
             return
          switch (notes[i].tpc) {
-            case -1: text.text = qsTranslate("InspectorAmbitus", "F♭♭") + text.text; break;
-            case  0: text.text = qsTranslate("InspectorAmbitus", "C♭♭") + text.text; break;
-            case  1: text.text = qsTranslate("InspectorAmbitus", "G♭♭") + text.text; break;
-            case  2: text.text = qsTranslate("InspectorAmbitus", "D♭♭") + text.text; break;
-            case  3: text.text = qsTranslate("InspectorAmbitus", "A♭♭") + text.text; break;
-            case  4: text.text = qsTranslate("InspectorAmbitus", "E♭♭") + text.text; break;
-            case  5: text.text = qsTranslate("InspectorAmbitus", "B♭♭") + text.text; break;
-            case  6: text.text = qsTranslate("InspectorAmbitus", "F♭")  + text.text; break;
-            case  7: text.text = qsTranslate("InspectorAmbitus", "C♭")  + text.text; break;
+            case -1: text.text = "ファ♭♭" + text.text; break;
+            case  0: text.text = "ド♭♭" + text.text; break;
+            case  1: text.text = "ソ♭♭" + text.text; break;
+            case  2: text.text = "レ♭♭" + text.text; break;
+            case  3: text.text = "ラ♭♭" + text.text; break;
+            case  4: text.text = "ミ♭♭" + text.text; break;
+            case  5: text.text = "シ♭♭" + text.text; break;
+            case  6: text.text = "ファ♭"  + text.text; break;
+            case  7: text.text = "ド♭"  + text.text; break;
 
-            case  8: text.text = qsTranslate("InspectorAmbitus", "G♭")  + text.text; break;
-            case  9: text.text = qsTranslate("InspectorAmbitus", "D♭")  + text.text; break;
-            case 10: text.text = qsTranslate("InspectorAmbitus", "A♭")  + text.text; break;
-            case 11: text.text = qsTranslate("InspectorAmbitus", "E♭")  + text.text; break;
-            case 12: text.text = qsTranslate("InspectorAmbitus", "B♭")  + text.text; break;
-            case 13: text.text = qsTranslate("InspectorAmbitus", "F")   + text.text; break;
-            case 14: text.text = qsTranslate("InspectorAmbitus", "C")   + text.text; break;
-            case 15: text.text = qsTranslate("InspectorAmbitus", "G")   + text.text; break;
-            case 16: text.text = qsTranslate("InspectorAmbitus", "D")   + text.text; break;
-            case 17: text.text = qsTranslate("InspectorAmbitus", "A")   + text.text; break;
-            case 18: text.text = qsTranslate("InspectorAmbitus", "E")   + text.text; break;
-            case 19: text.text = qsTranslate("InspectorAmbitus", "B")   + text.text; break;
+            case  8: text.text = "ソ♭"  + text.text; break;
+            case  9: text.text = "レ♭"  + text.text; break;
+            case 10: text.text = "ラ♭"  + text.text; break;
+            case 11: text.text = "ミ♭"  + text.text; break;
+            case 12: text.text = "シ♭"  + text.text; break;
+            case 13: text.text = "ファ"   + text.text; break;
+            case 14: text.text = "ド"   + text.text; break;
+            case 15: text.text = "ソ"   + text.text; break;
+            case 16: text.text = "レ"   + text.text; break;
+            case 17: text.text = "ラ"   + text.text; break;
+            case 18: text.text = "ミ"   + text.text; break;
+            case 19: text.text = "シ"   + text.text; break;
 
-            case 20: text.text = qsTranslate("InspectorAmbitus", "F♯")  + text.text; break;
-            case 21: text.text = qsTranslate("InspectorAmbitus", "C♯")  + text.text; break;
-            case 22: text.text = qsTranslate("InspectorAmbitus", "G♯")  + text.text; break;
-            case 23: text.text = qsTranslate("InspectorAmbitus", "D♯")  + text.text; break;
-            case 24: text.text = qsTranslate("InspectorAmbitus", "A♯")  + text.text; break;
-            case 25: text.text = qsTranslate("InspectorAmbitus", "E♯")  + text.text; break;
-            case 26: text.text = qsTranslate("InspectorAmbitus", "B♯")  + text.text; break;
-            case 27: text.text = qsTranslate("InspectorAmbitus", "F♯♯") + text.text; break;
-            case 28: text.text = qsTranslate("InspectorAmbitus", "C♯♯") + text.text; break;
-            case 29: text.text = qsTranslate("InspectorAmbitus", "G♯♯") + text.text; break;
-            case 30: text.text = qsTranslate("InspectorAmbitus", "D♯♯") + text.text; break;
-            case 31: text.text = qsTranslate("InspectorAmbitus", "A♯♯") + text.text; break;
-            case 32: text.text = qsTranslate("InspectorAmbitus", "E♯♯") + text.text; break;
-            case 33: text.text = qsTranslate("InspectorAmbitus", "B♯♯") + text.text; break;
+            case 20: text.text = "ファ♯"  + text.text; break;
+            case 21: text.text = "ド♯"  + text.text; break;
+            case 22: text.text = "ソ♯"  + text.text; break;
+            case 23: text.text = "レ♯"  + text.text; break;
+            case 24: text.text = "ラ♯"  + text.text; break;
+            case 25: text.text = "ミ♯"  + text.text; break;
+            case 26: text.text = "シ♯"  + text.text; break;
+            case 27: text.text = "ファ♯♯" + text.text; break;
+            case 28: text.text = "ド♯♯" + text.text; break;
+            case 29: text.text = "ソ♯♯" + text.text; break;
+            case 30: text.text = "レ♯♯" + text.text; break;
+            case 31: text.text = "ラ♯♯" + text.text; break;
+            case 32: text.text = "ミ♯♯" + text.text; break;
+            case 33: text.text = "シ♯♯" + text.text; break;
             default: text.text = qsTr("?")   + text.text; break;
          } // end switch tpc
 
